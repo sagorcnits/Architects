@@ -11,8 +11,16 @@
   color: #727272;
 }
 
+.paragraph {
+  padding: 20px 0;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 header {
-  padding: 40px 0;
+  padding: 20px 0;
+  background: rgba(255, 144, 14, 0.1);
 }
 
 header nav {
@@ -40,7 +48,7 @@ header ul li a {
 /* banner styles start */
 
 .banner-section {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .banner-container {
@@ -55,13 +63,6 @@ header ul li a {
   color: #131313;
 }
 
-.banner-container p {
-  padding: 20px 0;
-  line-height: 26px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 .banner-container button {
   padding: 12px 25px;
   background-color: #ff900e;
@@ -70,6 +71,11 @@ header ul li a {
   color: #fff;
   cursor: pointer;
   font-size: 20px;
+  transition: all 0.5s;
+}
+
+.banner-container button:hover {
+  background-color: black;
 }
 
 .banner-container img {
@@ -77,11 +83,71 @@ header ul li a {
   width: 100%;
 }
 
+/* our feture section style start  */
+
+.our-feture-section {
+  padding: 40px 0;
+}
+
+.our-feture-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  align-items: center;
+}
+
+.our-feture-img {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.our-feture-img img {
+  width: 100%;
+  margin: auto;
+}
+
+.our-feture-descrip {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.our-span {
+  color: #131313;
+}
+
+.feture-span {
+  color: #ff900e;
+}
+
+.our-feture-container button {
+  padding: 14px 25px;
+  background-color: #ff900e;
+  color: #fff;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 17px;
+}
+
+.our-feture-container button:hover {
+  background-color: black;
+}
+
+/* .our-feture-descrip {
+} */
+
 /* responsive styles start */
 
 /* mobile responsive style start */
 
 @media screen and (max-width: 576px) {
+  .our-feture-container,
   header nav {
     flex-direction: column;
   }
@@ -95,6 +161,9 @@ header ul li a {
   }
 
   header nav,
+  .our-feture-descrip,
+  .our-feture-img,
+  .our-feture-container,
   .banner-container {
     width: 95%;
   }
