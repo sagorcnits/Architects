@@ -44,6 +44,11 @@ header ul li a {
   text-decoration: none;
   margin-left: 40px;
   color: #424242;
+  transition: all 0.5s;
+}
+
+header ul li a:hover {
+  color: #ff900e;
 }
 
 /* banner styles start */
@@ -109,6 +114,7 @@ header ul li a {
 .our-feture-img img {
   width: 100%;
   margin: auto;
+  cursor: pointer;
 }
 
 .our-feture-descrip {
@@ -234,6 +240,7 @@ header ul li a {
 
 .some-card-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
   gap: 10px;
@@ -246,16 +253,54 @@ header ul li a {
   border-radius: 8px;
   text-align: center;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .card img {
   margin-top: 20px;
 }
+/* sponsor section style start */
+
+.sponsor-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.sponsor-section > h2 {
+  font-size: 35px;
+  color: #131313;
+  font-weight: 700;
+}
+
+.sponsor-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsor-container img {
+  width: 140px;
+}
+
+/* footer style start */
+
+footer {
+  margin-top: 40px;
+  background-color: #fff4e7;
+  padding: 20px;
+  text-align: center;
+}
+
 /* responsive styles start */
 
 /* mobile responsive style start */
 
 @media screen and (max-width: 576px) {
+  /* .sponsor-container, */
   .some-card-container,
   .experience-container,
   .our-feture-container,
@@ -310,6 +355,8 @@ header ul li a {
     margin-left: 15px;
   }
   header nav,
+  .sponsor-container,
+  .some-fact-container,
   .experience-container,
   .banner-container {
     width: 95%;
